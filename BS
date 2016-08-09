@@ -1,0 +1,29 @@
+def binarysearch(alist, item):
+     first = 0
+     last = len(alist)-1
+     found = False
+     
+     while first<=last and not found:
+     midpiont = (first + last)//2
+     if alist[midpoint] == item:
+        found = True
+     else:
+         if item < alist[midpoint]:
+             last = midpoin-1
+         else:
+             first = midpoint+1
+    return found
+testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42,]
+print(binarySearch(testlist, 3))
+print(binarySearch(testlist, 13))
+ 
+##Binary Search of an Ordered List (search3) 
+
+def binarySearch(alist, item):
+    if len(alist) == 0:
+       return False
+    else:
+      return binarySearch(alist[midpoint+1:], item)
+testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42,]
+print(binarySearch(testlist, 3))
+print(binarySearch(testlist, 13))
